@@ -5,11 +5,11 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY target/order-service.jar /app/order-service.jar
+COPY target/order-service.jar /app/microservice.jar
 
 # Expose the port the application runs on
 EXPOSE 8080
 
 # Define the command to run the application
-CMD ["java", "-jar", "order-service.jar"]
+CMD ["java", "-jar", "microservice.jar"]
 
